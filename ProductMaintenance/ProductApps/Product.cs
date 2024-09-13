@@ -18,6 +18,8 @@ namespace ProductApps
         private decimal gst;
         public decimal AfterDeliveryCharge;
         public decimal afterWrappingCharge;
+        public decimal afterGstCharge;
+
 
         private decimal Price
         {
@@ -70,6 +72,8 @@ namespace ProductApps
             TotalPayment = Price * Quantity;
             AfterDeliveryCharge = (Price * Quantity) + deliveryCharge;
             afterWrappingCharge = (Price * Quantity) + deliveryCharge + wrappingCharge;
+            afterGstCharge = (TotalPayment + 25 + 5) * 1.1m;
+
         }
     }
 }

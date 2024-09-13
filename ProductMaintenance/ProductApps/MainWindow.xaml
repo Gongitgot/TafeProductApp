@@ -9,6 +9,8 @@
         <Label Content="Total Payment $:" HorizontalAlignment="Left" Height="30" Margin="46,160,0,0" VerticalAlignment="Top" Width="96"/>
         <Label Content="Total Charge after adding the delivery charge ($25): " HorizontalAlignment="Left" Height="30" Margin="46,200,0,0" VerticalAlignment="Top"/>
         <Label Content="Total Charge after adding the wrap charge ($5): " HorizontalAlignment="Left" Height="30" Margin="46,240,0,0" VerticalAlignment="Top"/>
+        <Label Content="Total Charge After GST @ 10%: " HorizontalAlignment="Left" Height="30" Margin="46,265,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="gstChargeTextBlock" HorizontalAlignment="Center" Height="20" Margin="46,270,0,0" VerticalAlignment="Top"/>
         <TextBlock Name="totalChargeTextBlock" Text="" HorizontalAlignment="Center" Height="30" Margin="46,235,0,0" VerticalAlignment="Top"/>
         <TextBlock Name="totalPaymentTextBlock" HorizontalAlignment="Left" Height="23" Margin="164,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
         <TextBlock Name="wrapChargeTextBlock" HorizontalAlignment="Center" Height="20" Margin="46,260,0,0" VerticalAlignment="Top"/>
