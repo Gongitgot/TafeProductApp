@@ -8,12 +8,14 @@ namespace ProductApps
 {
     class Product
     {
+        const int deliveryCharge = 25;
         private decimal price;
         private int quantity;
         private decimal totalPayment;
         private decimal delivery;
         private decimal wrapping;
         private decimal gst;
+        public decimal AfterDeliveryCharge;
 
         private decimal Price
         {
@@ -64,6 +66,7 @@ namespace ProductApps
         public void calTotalPayment()
         {
             TotalPayment = Price * Quantity;
+            AfterDeliveryCharge = (Price * Quantity) + deliveryCharge;
         }
     }
 }
